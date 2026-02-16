@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  // Use empty string or './' for relative paths in build
+  // Setting base to './' ensures all assets load correctly regardless of subfolder
   base: './', 
   plugins: [react()],
   define: {
@@ -12,5 +12,10 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   }
 });

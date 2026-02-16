@@ -1,0 +1,9 @@
+
+{
+  "name": "Gemini DocChat Pro",
+  "description": "An advanced AI-powered document chatbot with admin controls, custom instructions per document, and multi-user access management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

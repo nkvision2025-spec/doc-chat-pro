@@ -22,7 +22,6 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        /* Custom scrollbar */
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
@@ -49,7 +48,7 @@
 <body class="h-screen overflow-hidden">
     <div id="root" class="h-full"></div>
     
-    <!-- Vite entry point: Needs to be absolute path in source, Vite will fix it on build -->
+    <!-- Vite will handle this entry point correctly during build -->
     <script type="module" src="/index.tsx"></script>
     
     <script>

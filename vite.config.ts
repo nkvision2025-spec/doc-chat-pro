@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  // Setting base to './' ensures all assets load correctly regardless of subfolder
+  // Use relative paths so assets load correctly on GitHub Pages subfolders
   base: './', 
   plugins: [react()],
   define: {
